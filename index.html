@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRiosity - QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">QRiosity</h1>
+        
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" placeholder="https://www.example.com">
+        
+        <br>
+        
+        <label for="fillColorInput">Choose Fill Color:</label>
+        <input type="color" id="fillColorInput" value="#F2F299">
+        
+        <br>
+        
+        <label for="backColorInput">Choose Background Color:</label>
+        <input type="color" id="backColorInput" value="#58828B">
+        
+        <br>
+        
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        
+        <div id="qrCodeContainer"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
